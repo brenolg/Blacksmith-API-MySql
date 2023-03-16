@@ -1,18 +1,10 @@
-import { Handler, NextFunction, Request, Response, Router } from 'express';
+import { Router } from 'express';
 import productController from '../controllers/product.controller';
+import resolver from './resolver';
 
 const productRouter = Router();
 
-const resolver = (handlerFn: Handler) =>
-  ( 
-    req: Request,
-    res: Response,
-    next: NextFunction,
-  ) => { 
-    Promise.resolve(handlerFn(req, res, next))
-      .catch((e) => next(e));
-  };
-
 productRouter.post('/', resolver(productController.createProduct));
+productRouter.get('/', resolver(productController.getAllProduct));
 
 export default productRouter;
