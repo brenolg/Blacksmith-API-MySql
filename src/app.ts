@@ -17,6 +17,7 @@ const resolver = (handlerFn: Handler) =>
   };
 
 app.use('/products', resolver(routers.productRouter));
+app.use('/users', resolver(routers.userRouter));
 
 app.use(errorMiddleware);
 
