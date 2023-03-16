@@ -1,5 +1,5 @@
 import express from 'express';
-// import httpErrorMiddleware from './middlewares/http.error.middleware';
+import errorMiddleware from './middlewares/error';
 import routers from './routers';
 
 const app = express();
@@ -8,6 +8,6 @@ app.use(express.json());
 
 app.use('/products', routers.productRouter);
 
-// app.use(httpErrorMiddleware);
+app.use(errorMiddleware);
 
 export default app;

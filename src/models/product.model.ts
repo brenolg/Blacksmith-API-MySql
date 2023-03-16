@@ -8,8 +8,8 @@ const createProduct = async (product: IProduct): Promise<IProduct> => {
   const [{ insertId }] = await connection.execute<ResultSetHeader>(
     'INSERT INTO Trybesmith.products (name, amount) VALUES (?, ?)',
     [name, amount],
-   
   );
+  
   return { id: insertId, name, amount };
 };
 
