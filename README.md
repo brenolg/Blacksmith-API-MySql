@@ -1,5 +1,5 @@
 # Trybesmith API
-Este projeto consiste no desenvolvimento de uma API em TypeScript para um CRUD (Create, Read, Update e Delete) de itens medievais. Através dessa API, criei endpoints que interagem com um banco de dados utilizando o Sequelize.
+Este projeto consiste no desenvolvimento de uma API em TypeScript para um CRUD (Create, Read, Update e Delete) de itens medievais. Através dessa API, criei endpoints que interagem com um banco de dados utilizando o SQL.
 
 Utilizei a tipagem do TypeScript para tornar o código mais robusto e compreensível. Aprendi a declarar variáveis e funções com tipagens TypeScript, além de construir uma API Node Express com essa linguagem.
 
