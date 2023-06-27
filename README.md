@@ -50,7 +50,7 @@ Para instalar e executar o projeto localmente, você precisa ter o Docker instal
 
 Clone o repositório do GitHub:
 ```bash
-git clone git@github.com:brenolg/Trybesmith-API.git
+git clone git@github.com:brenolg/Trybesmith-API-MySql.git
 ```
 Rode os serviços node e db:
 ```bash
